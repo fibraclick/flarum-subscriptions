@@ -7,7 +7,7 @@ Ciao {!! $user->display_name !!}!
 <br><br>
 ---
 <br><br>
-{!! $blueprint->post->content !!}
+{!! $blueprint->post->contentHtml !!}
 <br><br>
 ---
 <br><br>
