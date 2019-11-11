@@ -2,7 +2,7 @@ Ciao {!! $user->display_name !!}!
 <br><br>
 <i>{!! $blueprint->post->user->display_name !!}</i> ha risposto alla discussione
 <a href="{!! app()->url() !!}/d/{!! $blueprint->post->discussion_id !!}/{!! $blueprint->post->number !!}">
-<i>{!! $blueprint->post->discussion->title !!}</i></a>.
+<i>{!! $blueprint->post->discussion->title !!}</i></a>, a cui sei iscritto.
 <br><br>
 ---
 <br>
@@ -11,3 +11,5 @@ Ciao {!! $user->display_name !!}!
 ---
 <br><br>
 <i>Non riceverai ulteriori notifiche per questa discussione finché non avrai visualizzato i nuovi messaggi.</i>
+<br>
+<i>Puoi revisionare le impostazioni di notifica via email <a href="{!! app()->url() !!}/settings">qua</a>.</i>
