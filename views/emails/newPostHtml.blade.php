@@ -11,5 +11,5 @@ Ciao {!! $user->display_name !!}!
 ---
 <br><br>
 <i>Non riceverai ulteriori notifiche per questa discussione finché non avrai visualizzato i nuovi messaggi.</i>
-<br>
-<i>Puoi revisionare le impostazioni di notifica via email <a href="{!! app()->url() !!}/settings">qua</a>.</i>
+<br><br>
+<i>Puoi revisionare le impostazioni di notifica <a href="{!! app()->url() !!}/settings">qua</a>.</i>
