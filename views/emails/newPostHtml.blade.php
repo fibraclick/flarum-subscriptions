@@ -5,9 +5,7 @@ Ciao {!! $user->display_name !!}!
 <i>{!! $blueprint->post->discussion->title !!}</i></a>, a cui sei iscritto.
 <br><br>
 ---
-<br>
 {!! $blueprint->post->formatContent() !!}
-<br>
 ---
 <br><br>
 <i>Non riceverai ulteriori notifiche per questa discussione finché non avrai visualizzato i nuovi messaggi.</i>
