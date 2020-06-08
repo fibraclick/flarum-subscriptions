@@ -1,8 +1,7 @@
-Hey {!! $user->display_name !!}!
+Ciao {!! $user->display_name !!}!
 
-{!! $blueprint->post->user->display_name !!} made a post in a discussion you're following: {!! $blueprint->post->discussion->title !!}
+{!! $blueprint->post->user->display_name !!} ha risposto alla discussione "{!! $blueprint->post->discussion->title !!}", a cui sei iscritto.
 
-To view the new activity, check out the following link:
 {!! app()->url() !!}/d/{!! $blueprint->post->discussion_id !!}/{!! $blueprint->post->number !!}
 
 ---
@@ -11,4 +10,6 @@ To view the new activity, check out the following link:
 
 ---
 
-You won't receive any more notifications about this discussion until you're up-to-date.
+Non riceverai ulteriori notifiche per questa discussione finché non avrai visualizzato i nuovi messaggi.
+
+Puoi revisionare le impostazioni di notifica qua: {!! app()->url() !!}/settings

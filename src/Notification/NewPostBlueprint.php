@@ -58,7 +58,7 @@ class NewPostBlueprint implements BlueprintInterface, MailableInterface
      */
     public function getEmailView()
     {
-        return ['text' => 'flarum-subscriptions::emails.newPost'];
+        return ['text' => 'flarum-subscriptions::emails.newPost', 'html' => 'flarum-subscriptions::emails.newPostHtml'];
     }
 
     /**
@@ -66,7 +66,7 @@ class NewPostBlueprint implements BlueprintInterface, MailableInterface
      */
     public function getEmailSubject()
     {
-        return '[New Post] '.$this->post->discussion->title;
+        return 'Nuova risposta in "' . $this->post->discussion->title . '"';
     }
 
     /**
