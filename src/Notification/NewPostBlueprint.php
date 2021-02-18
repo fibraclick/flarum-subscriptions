@@ -59,7 +59,7 @@ class NewPostBlueprint implements BlueprintInterface, MailableInterface
      */
     public function getEmailView()
     {
-        return ['text' => 'flarum-subscriptions::emails.newPost'];
+        return ['text' => 'flarum-subscriptions::emails.newPost', 'html' => 'flarum-subscriptions::emails.newPostHtml'];
     }
 
     /**
@@ -67,7 +67,7 @@ class NewPostBlueprint implements BlueprintInterface, MailableInterface
      */
     public function getEmailSubject(TranslatorInterface $translator)
     {
-        return $translator->trans('flarum-subscriptions.email.new_post.subject', ['{title}' => $this->post->discussion->title]);
+        return 'Nuova risposta in "' . $this->post->discussion->title . '"';
     }
 
     /**
